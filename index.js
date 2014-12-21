@@ -9,6 +9,9 @@ mongoose.connect('mongodb://admin:myCRM1@ds027771.mongolab.com:27771/heroku_app3
     }
 });
 
+var clients = require('./routes/clients');
+app.use('/clients', clients);
+
 app.set('port', (process.env.PORT || 5000));
 app.use(express.static(__dirname + '/public'));
 
@@ -19,3 +22,4 @@ app.get('/', function(request, response) {
 app.listen(app.get('port'), function() {
   console.log("Node app is running at localhost:" + app.get('port'));
 });
+
