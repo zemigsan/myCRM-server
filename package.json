@@ -1,6 +1,6 @@
 {
-  "name": "node-js-getting-started",
-  "version": "0.1.2",
+  "name": "myCRM-server",
+  "version": "0.0.1",
   "description": "A sample Node.js app using Express 4",
   "main": "index.js",
   "scripts": {
@@ -8,9 +8,7 @@
   },
   "dependencies": {
     "express": "~4.9.x",
-	"mongodb": "~2.x",
-	"mongoose": "~3.x",
-	"mongojs": "~0.18"
+    "mongoose": "~3.8.x"
   },
   "engines": {
     "node": "0.10.x"
