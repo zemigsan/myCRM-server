@@ -18,6 +18,7 @@ local: clean pack_local
 pack:
 	${CP} ${PROD_FILES} ${OUT_DIR} && \
     git add --all . && \
+    git config --global user.email "zemigsan@gmail.com"  && \
     git commit -m "automatic commit production"  && \
     git push heroku master  && \
     heroku open
