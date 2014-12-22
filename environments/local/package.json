@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "A sample Node.js app using Express 4",
   "main": "index.js",
-  "mongodburi" : "mongodb://admin:myCRM1@ds027771.mongolab.com:27771/heroku_app32701444",
+  "mongodburi" : "mongodb://localhost:27017/mycrm",
   "scripts": {
     "start": "node index.js"
   },
