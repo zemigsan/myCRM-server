@@ -6,6 +6,7 @@ var ClientSchema = new mongoose.Schema({
   phone: String,
   origin: String,
   note: String,
+  user: { type: mongoose.Schema.Types.ObjectId, ref: 'User', index: true },
   updated_at: { type: Date, default: Date.now },
 });
 
